@@ -16,17 +16,18 @@ from flask_cors import CORS
 # ─── TensorFlow (loaded lazily to speed up startup) ───────────────────────────
 MODEL_LOADED = False
 model = None
+# Classes must be in alphabetical order to match Keras flow_from_directory indices
 CLASSES = [
     "Gir",
-    "Sahiwal",
-    "Tharparkar",
-    "Rathi",
-    "Ongole",
-    "Kankrej",
     "Hallikar",
     "Holstein Friesian",
     "Jersey",
+    "Kankrej",
+    "Ongole",
+    "Rathi",
     "Red Sindhi",
+    "Sahiwal",
+    "Tharparkar",
 ]
 
 BREED_INFO = {
